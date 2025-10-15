@@ -11,13 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${prod.nombre}</h3>
           <h3>${prod.descripcion}</h3>
           <p>$${prod.precio}</p>
+          <button class="buyButon">Agregar</button>
         `;
         contenedor.appendChild(card);
       });
-
-
     })
     .catch(err => console.error("Error cargando productos:", err));
 });
-
-
