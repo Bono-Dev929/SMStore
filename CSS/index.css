@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #8d8b8b;
+    color: #333;
+    height: 100%;
+    display: flex; /* 🔹 convierte el body en contenedor flex */
+    flex-direction: column; /* 🔹 apila header, main, footer en columna */
+    min-height: 100vh; /* 🔹 al menos toda la altura visible */
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+        align-items: center;
+        /* 🔹 centra verticalmente el logo y el texto */
+        justify-content: center;
+        /* 🔹 centra todo horizontalmente */
+        gap: 20px;
+        /* 🔹 espacio entre logo y texto */
+        padding: 1rem;
+        
+}
+
+
+.logo {
+    width: 50px;
+    /* 🔹 tamaño del logo */
+    height: 50px;
+    /* 🔹 asegurás proporción */
+    object-fit: contain;
+    /* 🔹 evita deformaciones */
+}
+
+main {
+    flex: 1;
+    /* 🔹 el contenido ocupa el espacio disponible */
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    gap: 1.2rem;
+    padding: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+    max-width: 250px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    /* 🔹 efecto suave al pasar el mouse */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+footer .firma {
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: #666;
+    font-style: italic;
+    flex-wrap: wrap;
+    
+}
+
+footer .firma strong {
+    color: #0077cc;
+    /* Color distintivo de tu marca */
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+footer .logo-lucorp {
+    width: 40px;
+    /* 🔹 ajusta este valor según el tamaño que necesites */
+    height: auto;
+    vertical-align: middle;
+    border-radius: 6px;
+    /* opcional si querés esquinas suaves */
+}
+
+@media (max-width: 600px) {
+     footer, header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Boton de redireccion al carrito*/
+
+.chart {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.chart:hover {
+    background-color: #005fa3;
+}

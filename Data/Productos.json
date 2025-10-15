@@ -1,0 +1,9 @@
+[
+  {"nombre": "Gorra negra","descripcion":"Gorra negra ajustable" , "precio": 2500, "imagen": "Gorra.webp" },
+  {"nombre": "Taza anime","descripcion":"Taza ceramica OnePiece" , "precio": 1800, "imagen": "Taza.webp" },
+  {"nombre": "Remera estampada","descripcion":"Remera estampada logo Black clover" , "precio": 3500, "imagen": "RemeraBC.webp" },
+  {"nombre": "Termo Stanley","descripcion":"Termo Stanley 1.5l" , "precio": 2500, "imagen": "TermoST.webp" },
+  {"nombre": "Set Mate Stanley","descripcion":"Set Mate + Yerbero + Azucarero + Bombilla" , "precio": 1800, "imagen": "SetStanly.webp" },
+  {"nombre": "Botella Termica Stanley","descripcion":"Botella termica 500ml" , "precio": 3500, "imagen": "BotellaStanly.webp" },
+  {"nombre": "Vaso Quencher Stanley","descripcion":"Vaso Quecher 1.2l" , "precio": 2500, "imagen": "VasoQuencher.webp" }
+]
